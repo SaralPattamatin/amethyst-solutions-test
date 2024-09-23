@@ -1,7 +1,13 @@
 <template>
   <div>
-      <NuxtLayout>
-        <NuxtPage/>
-      </NuxtLayout>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+  middleware: 'auth'
+})
+</script>
